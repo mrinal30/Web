@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".CountryDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:id="@+id/CountryTextId"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center|top"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country Name">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/CountryImageId"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bangladesh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </ImageView>
+        </LinearLayout>
+        <WebView
+            android:id="@+id/simpleWebViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </WebView>
+    </LinearLayout>
+
+
+</ScrollView>
